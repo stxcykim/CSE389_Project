@@ -1,0 +1,209 @@
+
+/* Centering of all elements within the main tag */
+body{
+  margin: auto;
+  width: 90%;
+}
+
+/* Getting rid of styling of links after clicked on to maintain style of website and changing to pointer when hovered over to indiciate there is a address link*/
+body a{
+  text-decoration:none;
+  color:black;
+  cursor: pointer;
+}
+
+ /* Aligning the list horiztonally and centered along with font style*/
+ nav ul{
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none; 
+  margin-top:30px;
+  padding:0;
+}
+
+/* Styling and spacing of each tab in navigation bar */
+nav a{
+    text-decoration: none;
+    color: black;
+    margin: 40px;
+}
+
+nav a:hover{
+  color:white;
+  text-decoration:none;
+  background-color:black;
+  border-radius: 5px;
+}
+
+h1{
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size:120px;
+  text-align: center;
+  margin-top:0px;
+  margin-bottom:10px;
+}
+
+h2{
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size:40px;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+
+h3{
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+
+p{
+  font-family: 'Open Sans', sans-serif;
+}
+
+button{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  background-color:transparent;
+  border-radius: 0px;
+  border:  2px solid black;
+  width:150px;
+  height:50px;
+  margin-bottom:20px;
+}
+
+button:hover {
+  background-color:black;
+  color: white;
+  cursor: pointer;
+}
+  
+/* Styling and spacing of each tab in more information list */
+.more-information a{
+  text-decoration: none;
+  color: black;
+}
+
+/* Placement and alignment of copyright statement */
+#copyright{
+  margin-top:50px;
+  margin-bottom:10px;
+  text-align:center;
+}
+
+iframe{
+  width:100%; 
+  height:610px;
+}
+
+@media only screen and (max-width: 600px) {
+  body{margin:auto; width:100%;}
+  nav ul{display:block; text-align: center; padding:0;}
+  h1{font-size:70px; margin-bottom:20px}
+  p, h2,h3, button{margin-left:15%; margin-right:15%}
+  .volunteer-page{display:none;}
+  .volunteer h2{margin-top:20px;}
+  .food-page img{width:100%; height:300px; object-fit:cover;}
+  .places-page img{width:100%; height:300px; object-fit:cover;}
+  .watch{display:none;}
+}
+
+@media only screen and (min-width: 601px) {
+  .places-page article{display:flex;}
+  .mobile-volunteer-page{display:none;}
+  .food-page img{width:300px; height:200px; object-fit:cover;}
+  .places-page img{margin:10px; width:33%; height:200px; object-fit:cover;}
+  .watch{margin:20px; text-align:center;}
+  .mobile-watch{display:none;}
+} 
+
+/* Review system styling /*
+
+ /* review system styling */ 
+ .container {
+  margin: auto;
+  width: 1000px;
+  overflow: auto;
+  padding: 3rem 2rem;
+}
+
+#my-form {
+  padding: 4rem;
+  background: #f4f4f4;
+}
+
+#my-form .btn {
+position: relative;
+top: 30px;
+bottom: 0;
+left: 32%;
+font-family: 'Open Sans', sans-serif;
+font-size: 12px;
+background-color: transparent;
+border-radius: 0px;
+border:  2px solid black;
+width:200px;
+height:50px;
+}
+/* Item select dropdown styling */ 
+#item-select{
+width:70%;
+margin: 10px 0;
+box-sizing: border-box;
+}
+
+/* Changing width of input box */ 
+input[type=text]{
+width: 100%;
+margin: 10px 0;
+box-sizing: border-box;
+}
+/* Star rating styling */
+#rating {
+position: relative;
+display: inline-block;
+margin: 2px 0;
+font-size: 50px;
+}
+
+#rating span {
+cursor: pointer;
+font-size: 50px;
+padding: 0 3px;
+color: rgb(173, 173, 173);
+opacity: .5;
+transition: all 150ms;
+display: inline-block;
+transform: rotateX(50deg);
+transform-origin: center bottom;
+}
+
+/* fill the stars when hovered */
+#rating span.hover {
+color: orange;
+opacity: 1;
+transform: rotateX(0deg);
+text-shadow: 0 0 30px #ffc;
+}
+/* fill the stars when clicked */
+#rating span.fill {
+color: orange;
+opacity: 1;
+transform: rotateX(0deg);
+text-shadow: 0 0 30px #ffc;
+}
+#reviews {
+font-family: 'Pathway Gothic One', sans-serif;
+border: 2px solid #ddd;
+background-color: #eee;
+list-style-type: none;
+padding: 2px;
+}
+#reviews li {
+padding: 8px; 
+font-size: 20px;
+border-bottom: 2px solid #ddd;
+}
+
+#reviews li:last-child {
+border-bottom: none;
+}

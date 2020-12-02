@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuse-To-Go | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="home.css">
+  <style>
+    .home-page{
+      text-align:center;
+    }
+    /* Heading 1 styling for home page*/
+    .home-page h1{
+      font-family: 'Pathway Gothic One', sans-serif;
+      font-size:120px;
+      text-align: center;
+      
+    }
+    /* Paragraph text styling for home page*/
+    .home-page p{
+      font-family: 'Open Sans', sans-serif; 
+    }
+    /* Styling of button in home page*/
+    .home-page button{
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      background-color:transparent;
+      border-radius: 0px;
+      border:  2px solid black;
+      width:150px;
+      height:50px;
+    }
+    /* Styling of button when hovered */
+    .home-page button:hover {
+      background-color:black;
+      color: white;
+      cursor: pointer;
+    }
+    /* Placement and styling of copyright text for home page*/
+    #home-copyright{
+      font-family: 'Open Sans', sans-serif;
+      text-align: center;
+      margin-top:150px;
+    }
+    .jumbotron{
+      margin-top:100px;
+    }
+    /* had to do a media query here because internal styling was overriding the external styling */
+    @media only screen and (max-width: 600px) {
+      .home-page h1{font-size:70px; margin-top:50px;}
+      .home-page p{margin:10px;}
+      .jumbotron{margin-top:0px;}
+    }
+  </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="places.html">PLACES</a></li>
+            <li><a href="food.html">FOOD</a></li>
+            <li><a href="volunteer.html">VOLUNTEER</a></li>
+            <li><a href="help.html">HELP</a></li>
+        </ul>
+      </nav>
+    <main class="home-page">
+      <div class="jumbotron">
+        <h1 class="display-4">CUSE-TO-GO</h1>
+        <p class="lead">An informative website app for prospective Syracuse Students. 
+          Learn about places you can visit in and around the neighborhood of Syracuse, food you have to taste, 
+          and how you can use your helping hand in the Syracuse community. </p>
+        <hr class="my-4">
+        <p>Click the button to be redirected to SU's about page.</p>
+        <button onclick="window.location.href='https://www.syracuse.edu/about/';" >LEARN MORE</button>
+        </div> 
+    </main>
+    <footer>
+      <div id="home-copyright">
+        <p> Copyright &copy;  2020 Stacy Kim</p>
+      </div> 
+    </footer>
+</body>
+</html>

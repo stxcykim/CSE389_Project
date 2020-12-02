@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuse-To-Go | Places</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="places.html">PLACES</a></li>
+            <li><a href="food.html">FOOD</a></li>
+            <li><a href="volunteer.html">VOLUNTEER</a></li>
+            <li><a href="help.html">HELP</a></li>
+          </ul>
+    </nav>
+    <main class="places-page">
+        <section>
+            <h1>PLACES</h1>
+            <article>   
+                <img src="images/lake.jpg" alt="Green Lakes State Park">
+                <div class="">
+                    <h2>Green Lakes State Park</h2>
+                    <p class="location"><a href="https://goo.gl/maps/dzvdcu9ogTBmfP1N9">Fayetteville, NY</a></p>
+                    <p class="description">Green Lakes State Park's outstanding features are its two glacial lakes surrounded by upland forest. Another special feature of the park is the 18-hole Green Lakes State Park Golf course.</p>
+                    <button onclick="window.location.href='https://parks.ny.gov/parks/172/details.aspx';">GET DIRECTIONS</button>
+                </div>
+            </article>
+            <article>
+                <img src="images/skan.jpg" alt="Skaneateles">
+                <div>
+                    <h2>Skaneateles</h2>
+                    <p class="location"><a href="https://goo.gl/maps/TwmYyqKLmifp9aN79">Skaneateles, NY</a></p>
+                    <p class="description">A clear blue lake alongside a vibrant downtown filled with unique shops and restaurants combine for a one-of-a-kind, relaxing experience.</p>
+                    <button onclick="window.location.href='https://www.skaneateles.com';">GET DIRECTIONS</button>
+                </div>
+            </article>
+            <article>
+                <img src="images/apple.jpg" alt="Beak & Skiff">
+                <div>
+                    <h2>Beak & Skiff Apple Farms Inc.</h2>
+                    <p class="location"><a href="">Lafayette, NY</a></p>
+                    <p class="description">Visit the #1 orchard in America. You can experience there many attractions including the Apple Barn, Apple Hill General Store, Beak & Skiff Bakery, and more.</p>
+                    <button onclick="window.location.href='https://goo.gl/maps/gwJupUi28zD3wMxF9';">GET DIRECTIONS</button>
+                </div>
+            </article>
+            <article>
+                <img src="images/mall.jpg" alt="Destiny USA">
+                <div>
+                    <h2>Destiny USA</h2>
+                    <p class="location"><a href="">Syracuse, NY</a></p>
+                    <p class="description">Destiny USA is a six-story, automobile-oriented super-regional shopping and entertainment complex. It is the largest shopping mall in the State of New York.</p>
+                    <button onclick="window.location.href='https://goo.gl/maps/ACLoasCebo8RTmBx7';">GET DIRECTIONS</button>
+                </div>
+            </article>
+        </section>
+    </main>
+    <aside>
+        <section class="watch">
+            <h2>Watch the Youtube video "22 Things To Do In Syracuse" to learn more:</h2>
+            <iframe src="https://www.youtube.com/embed/gU8iE8nWrgg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
+        </section>
+        <section class="mobile-watch">
+            <h2>Watch the Youtube video "22 Things To Do In Syracuse" to learn more:</h2>
+            <button onclick="window.location.href='https://www.youtube.com/embed/gU8iE8nWrgg';">WATCH HERE</button>
+        </section>
+    </aside>
+    <section class="container">
+        <form id="my-form">
+          <h2>Add Review</h2>
+          <div class="msg"></div>
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+          </div>
+          <div class="form-group">
+            <select id = "item-select" class="form-control custom-select">
+              <option value="0" disabled selected>Select Location</option>
+              <option value = "Green Lakes State Park">Green Lakes State Park</option>
+              <option value = "Skaneateles">Skaneateles</option>
+              <option value = "Beak & Skiff Apple Farms Inc.">Beak & Skiff Apple Farms Inc.</option>
+              <option value = "Destiny USA">Destiny USA</option>
+           </select>
+          </div>
+          <div id="rating">
+            <span>★</span>
+            <span>★</span>
+            <span>★</span>
+            <span>★</span>
+            <span>★</span>
+          </div>
+          <div>
+              <label for="review">Review:</label>
+              <input type="text" id="review">
+          </div>
+          <input class="btn" type="submit" value="Submit">
+        </form>
+      </section>
+      <section class="container">
+        <form id="my-form">
+          <h2>User Reviews</h2>
+          <ul id="reviews"></ul>
+        </form>
+        </section>
+        <script src="review.js"></script>
+    <footer>
+        <div id="copyright">
+          <p> Copyright &copy;  2020 Stacy Kim</p>
+        </div> 
+    </footer>
+</body>
+</html>
